@@ -222,3 +222,21 @@
 {"name":"logger","hostname":"delrkakk166059","pid":10388,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T05:07:37.296Z","v":0}
 {"name":"logger","hostname":"delrkakk166059","pid":10388,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T05:07:37.325Z","v":0}
 {"name":"logger","hostname":"delrkakk166059","pid":10388,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T05:07:37.331Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"server listening on port: 9000","time":"2015-12-30T07:21:53.896Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:15.393Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:15.418Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:15.422Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  { username: 'arjdk12345', password: 'ksjsk' }","time":"2015-12-30T07:22:20.557Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"request  :: { username: 'arjdk12345', password: 'ksjsk' }","time":"2015-12-30T07:22:20.558Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n session : [object Object]","time":"2015-12-30T07:22:20.558Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n sess : [object Object]","time":"2015-12-30T07:22:20.558Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n User Entered arjdk12345","time":"2015-12-30T07:22:20.558Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:34.997Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n In The Valid Method Session {\n  cookie: \n   { path: '/',\n     _expires: Wed Dec 30 2015 12:52:23 GMT+0530 (India Standard Time),\n     originalMaxAge: 3000,\n     httpOnly: true },\n  views: { '/loginForm': 1, username: 'arjdk12345' } }","time":"2015-12-30T07:22:35.002Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:37.027Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"username before session invalidation undefined","time":"2015-12-30T07:22:37.028Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":50,"msg":"undefined","time":"2015-12-30T07:22:37.028Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:38.136Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n In The Valid Method null","time":"2015-12-30T07:22:38.136Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"Body of request is  {}","time":"2015-12-30T07:22:51.224Z","v":0}
+{"name":"logger","hostname":"delrkakk166059","pid":10948,"level":30,"msg":"\n In The Valid Method null","time":"2015-12-30T07:22:51.224Z","v":0}

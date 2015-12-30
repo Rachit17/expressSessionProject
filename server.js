@@ -29,31 +29,23 @@ app.use(function (req, res, next) {
 
   // get the url pathname
   var pathname = parseurl(req).pathname;
-  console.log("path name is ::",pathname)
-  console.log("In view method ",req.body)
   logger.info("Body of request is ",req.body)
 
   // count the views
   views[pathname] = (views[pathname] || 0) + 1;
   if(pathname=='/loginForm')
    {
-      console.log('1');
     views['username'] =req.body.username;
     next();
     }
   else if(views['username']!=''){
-      console.log('2');
       next();
   }else if(pathname=='/' || pathname=='/registration' ){
-    console.log('3');
       next();
 
   }else {
-    console.log('4');
-      console.log('Invalid Request');
       res.end('Session expired... Invalid Value');  
   }
-    console.log('5');
 
 
   
@@ -99,9 +91,9 @@ app.post('/loginForm', function(req, res){
   sess = req.session;
     logger.info('\n session : '+sess);
     logger.info('\n sess : '+sess.views);
-    logger.info('\n User Entered'sess.views['username']);
+    logger.info('\n User Entered',sess.views['username']);
     res.setHeader('Content-Type', 'text/html')
-    res.write('<p><b>Welcome' + sess.views['username'] + ' !!!!</b></p>');
+    res.write('<p><b>Welcome ' + sess.views['username'] + ' !!!!</b></p>');
     res.write('<a href="valid"><p class="small">Valid Access</p></a>');
     res.write('<a href="logout"><p class="small">Log out</p></a>');
     res.end()
@@ -122,7 +114,7 @@ app.get('/logout', function(req, res){
 });
 
 app.listen(9000, function(){
-	console.log('server listening on port: 9000');
+	logger.info('server listening on port: 9000');
 });
 
 
