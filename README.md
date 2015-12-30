@@ -1,6 +1,6 @@
 # expressSessionProject
 This is a dummy project covering the concepts of maintaining session using express js.
-============================================================How To run the project ========================================
+=====================How To run the project ====================
 1.Please note that you must have the node client installed.
 2.After that please open the project directory where you have downloaded the project.
 3.Then type the command in cmd (node server.js)
