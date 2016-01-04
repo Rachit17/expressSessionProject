@@ -1,7 +1,7 @@
 # expressSessionProject
 This is a dummy project covering the concepts of maintaining session using express
  js(cookie-parser).
-=================================How To run the project ==============================
+=================================How To run the project ====================================
 
 1.Please note that you must have the node client installed.
 2.After that please open the project directory where you have downloaded the project.
@@ -11,8 +11,7 @@ This is a dummy project covering the concepts of maintaining session using expre
 6.You will see the username displaying on the second screen,so it is maintaining the session.
 7.Then click on the valid request link,it will open another page.It will redirect to (http://localhost:9000/valid).
 8.Then click on the logout link,it will invalidate the session.It will redirect to (http://localhost:9000/logout).
-<<<<<<< HEAD
 9.Then click on the invalid request link ,It will redirect to (http://localhost:9000/valid),but there is no valid session, so it displays invalid request message.
 
-=================================Notes================================================
+=================================Notes=======================================================
 This project has all the logic embedded in server.js file, although we can use different layers for more clarity.This project uses bunyan for logging.
