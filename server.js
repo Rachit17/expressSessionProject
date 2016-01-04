@@ -11,12 +11,20 @@ var logger = require('./utils/loggerUtil');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+//Third -Party Middleware
 app.use(cookieParser());
+
 app.use(session({resave: true, saveUninitialized: true, 
-	secret: 'RANDOM', cookie: { maxAge: 3000 }}));
+secret: 'RANDOM', cookie: { maxAge: 3000 }}));
 
 var sess;
 
+
+/*
+The below function acts as application level middleware where it  
+has access to the request object (req), the response object (res), 
+and the next middleware function in the application’s request-response cycle
+*/
 
 app.use(function (req, res, next) {
 
@@ -53,23 +61,18 @@ app.use(function (req, res, next) {
 })
 
 
+/*
+This page will load by default on launch of the application
+*/
 app.get('/', function(req, res){
-
-	/*fs.readFile('./index.html', 'utf-8', function(err, data){
-		if(err) throw err;
-
-
-		res.send(data);
-	})*/
   
   res.sendFile(path.join(__dirname+'/index.html'));
 });
+
+/*
+This will load when the user clicks on registration button
+*/
 app.get('/registration', function(req, res){
-
-  /*fs.readFile('./views/registration.html', 'utf-8', function(err, data){
-    if(err) throw err;
-
-    res.send(data);*/
     sess = req.session;
 
     logger.info('User Entered In Registration ',sess.views['username']);
@@ -77,16 +80,13 @@ app.get('/registration', function(req, res){
     res.write('<p><b>Registration Page View Count : ' + sess.views['/registration'] + '</b></p>')
     res.write('<p><b>Cookie expires in : ' + (sess.cookie.maxAge / 1000) + '</b></p>')
     res.end()
- // })
 });
 
+/*This will load when the user enters the login credentials and 
+submits the form
+*/
 app.post('/loginForm', function(req, res){
 	logger.info("request  ::",req.body);
-  /*fs.readFile('./views/registration.html', 'utf-8', function(err, data){
-    if(err) throw err;
-
-    res.send(data);
-  })*/
 
   sess = req.session;
     logger.info('\n session : '+sess);
@@ -99,6 +99,8 @@ app.post('/loginForm', function(req, res){
     res.end()
 });
 
+/*This function logs out the user
+*/
 app.get('/logout', function(req, res){
 
   sess = req.session;
@@ -113,14 +115,17 @@ app.get('/logout', function(req, res){
   res.end()
 });
 
+/*Starting the html server*/
 app.listen(9000, function(){
-	logger.info('server listening on port: 9000');
+	logger.info('Server listening on port: 9000');
+  console.log('Server listening on port: 9000');
 });
 
 
+/*This function checks for the validity of the url after session is inactive
+*/
 app.get('/valid', function(req, res){
 
-  //sess = req.session;
   logger.info('\n In The Valid Method',sess)
 
   if(sess == null){

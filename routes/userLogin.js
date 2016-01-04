@@ -15,7 +15,3 @@ app.post('/loginForm', function(req, res){
 
 	res.render('registration.html', req.body);
 });
-
-/*app.listen(9000, function(){
-	console.log('server listening on port: 9000');
-});*/
