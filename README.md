@@ -13,5 +13,5 @@ This is a dummy project covering the concepts of maintaining session using expre
 8.Then click on the logout link,it will invalidate the session.It will redirect to (http://localhost:9000/logout).
 9.Then click on the invalid request link ,It will redirect to (http://localhost:9000/valid),but there is no valid session, so it displays invalid request message.
 
-=================================Notes=========================================================
+=============================================Notes=========================================================
 This project has all the logic embedded in server.js file, although we can use different layers for more clarity.This project uses bunyan for logging.
